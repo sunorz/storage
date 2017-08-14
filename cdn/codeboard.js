@@ -1,12 +1,12 @@
-/*
+﻿/*
 	Copyright By Sunplace,2017
 	Demo https://sunorz.github.io/demo/sample-39.html
+适配于本博客的修改版本
 */
 $(".codeblock").each(function(index,ele){
 		//循环代码块
 		var arr=$(this).html().split("\n");
-	    arr.splice(arr.length-1,1);//移除最后一个空白
-		var textc = "";	//代码初始化
+	  	var textc = "";	//代码初始化
 		var text="<ol class='linenum'>"//行号初始化
 		$(arr).each(function(index,ele){
 			//循环行
