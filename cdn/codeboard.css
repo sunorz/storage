@@ -24,5 +24,6 @@
 	margin: 0;
 	color:#3b3b3b;
 	border-right:#D3D3D3 solid 1px;
+	margin-bottom: 0px !important;
 	}
 	.mark{color:#C029CF;font-weight: bolder;background-color: transparent !important;}
