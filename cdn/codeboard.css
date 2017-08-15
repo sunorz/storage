@@ -13,6 +13,7 @@
 	/*End of 自动换行*/
 	background:#f3f3f3; 
 	margin:20px 0px 20px 0px;
+	border-radius:inherit;
 	}
 .codeblock div{margin: 0 !important;padding: 0px !important;}
 .linenum{
