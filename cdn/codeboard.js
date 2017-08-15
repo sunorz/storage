@@ -1,25 +1,30 @@
-﻿/*
+/*
 	Copyright By Sunplace,2017
-	Demo https://sunorz.github.io/demo/sample-39.html
+	Demo https://sunorz.github.io/demo/sample-39.html 
+
 适配于本博客的修改版本
 */
 $(".codeblock").each(function(index,ele){
 		//循环代码块
 		var arr=$(this).html().split("\n");
-	  	var textc = "";	//代码初始化
-		var text="<ol class='linenum'>"//行号初始化
+	    //arr.splice(arr.length-1,1);//移除最后一个空白
+		var textc = "";	//代码初始化
+		var text="<ul class='linenum'>"//行号初始化
+		var sline=startLine($(this));
 		$(arr).each(function(index,ele){
 			//循环行
+		
 			if(arr[index].trim()==""){arr[index]="&nbsp;";}
-				arr[index]='<div name="L'+(index+1)+'">'+arr[index]+'</div>';
+				arr[index]='<div name="L'+sline+'">'+arr[index]+'</div>';
 				if(index!==arr.length-1){
 					arr[index]+="\n";
 				}	
-				text+="<li></li>";		
+				text+="<li>"+sline+"</li>";		
 				textc+=arr[index];
+			sline++;
 
 			});
-		        text+="</ol>";
+		        text+="</ul>";
 				$(this).html(textc);
 		        $(this).append(text);
 		        setHeight();
@@ -32,8 +37,12 @@ $(".codeblock").each(function(index,ele){
 		var j=$(this).next().position().top-$(this).position().top;
 		if(j>0){
 			$(".linenum li:eq("+index+")").height(j);
-		}
+		}	
+	
 			});
+	$(".linenum").each(function(){
+		$(this).height($(this).parent(".codeblock").height());
+	})
 	}
 	
 	//行高亮
@@ -43,9 +52,20 @@ $(".codeblock").each(function(index,ele){
 			{
 		var arr = obj.attr("line").split(',');
 		$(arr).each(function(index,ele){
-			//console.log(obj.find("div[name=L"+ele+"]").text());
-			obj.find("div[name=L"+ele+"]").addClass("mark");
+		obj.find("div[name=L"+ele+"]").addClass("mark");
 		});
+			}
+	}
+	//指定行开始
+	function startLine(obj){
+		var sline = obj.attr("start");
+		if(sline!=null)
+			{
+		       return sline;
+			}
+		else
+			{
+				return 1;
 			}
 	}
 	$(window).resize(function(){
