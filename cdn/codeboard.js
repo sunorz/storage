@@ -1,4 +1,4 @@
-/*
+﻿/*
 	Copyright By Sunplace,2017
 	Demo https://sunorz.github.io/demo/sample-39.html 
 
@@ -16,9 +16,6 @@ $(".codeblock").each(function(index,ele){
 		
 			if(arr[index].trim()==""){arr[index]="&nbsp;";}
 				arr[index]='<div name="L'+sline+'">'+arr[index]+'</div>';
-				if(index!==arr.length-1){
-					arr[index]+="\n";
-				}	
 				text+="<li>"+sline+"</li>";		
 				textc+=arr[index];
 			sline++;
