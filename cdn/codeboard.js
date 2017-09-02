@@ -68,3 +68,18 @@ $(".codeblock").each(function(index,ele){
 	$(window).resize(function(){
 		setHeight();
 	});
+ $('#chgimg').on({  
+                    click:function(){ 
+					if($('#chgimg').attr('src')=='https://sunorz.github.io/demo/imgs/4/bg_chk.png')
+					{
+						 $('#chgimg').attr('src', 'https://sunorz.github.io/demo/imgs/4/bg_chkon.png'); 
+						
+					}
+					else if($('#chgimg').attr('src')=='https://sunorz.github.io/demo/imgs/4/bg_chkon.png')
+					{
+						 $('#chgimg').attr('src', 'https://sunorz.github.io/demo/imgs/4/bg_chk.png'); 
+						
+					}  
+                   } 
+						 
+                }); 
