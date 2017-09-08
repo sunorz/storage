@@ -1,0 +1,16 @@
+/*Copyright By Sunplace*/
+    .bdsh{display:inline-block;width: 28px; height: 28px;background:url(../img/share/icon-sn.svg) no-repeat;}
+	.weibo-sh:hover{background-position: -56px -28px;}
+	.weibo-sh{background-position: -56px 0px;}
+	.qq-sh:hover{background-position: -84px -28px;}
+	.qq-sh{background-position: -84px 0px;}
+	.wechat-sh:hover{background-position: -252px -28px;}
+	.wechat-sh{background-position: -252px 0px;}
+	.pb-sh:hover{background-position: -168px -28px;}
+	.pb-sh{background-position: -168px 0px;}
+	.fb-sh:hover{background-position: -140px -28px;}
+	.fb-sh{background-position: -140px 0px;}
+	.tw-sh:hover{background-position: -112px -28px;}
+	.tw-sh{background-position: -112px 0px;}
+	.url-sh:hover{background-position: -308px -28px;}
+	.url-sh{background-position: -308px 0px;}
