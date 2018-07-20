@@ -11,6 +11,7 @@ $(function(){
 				{
 					$(this).children("i").attr("class","fa fa-angle-down");
 				}
-			$(this).next("div").slideToggle();
+
+			$(".event_p").slideToggle();
 		});
 });
