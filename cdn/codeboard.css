@@ -1,0 +1,32 @@
+﻿/*
+	Copyright By Sunplace,2017
+	Demo https://sunorz.github.io/demo/sample-39.html
+    适配于本博客的修改版本
+*/
+.codeblock{
+	position: relative;
+	padding:0px 0px 0px 4em !important;
+	border: #D3D3D3 solid 1px;
+	/*自动换行*/
+	white-space: pre-wrap;
+    word-wrap: break-word;
+	/*End of 自动换行*/
+	background:#f3f3f3; 
+	margin:20px 0px 20px 0px;
+	border-radius:inherit;
+	}
+.codeblock div{margin: 0 !important;padding: 0px !important;}
+.linenum{
+	background: #e3e3e3;
+	display:inline-block;
+	position: absolute;
+	top:0;
+	left:0;
+	margin: 0;
+	padding: 0px !important;
+	color:#3b3b3b;
+	border-right:#D3D3D3 solid 1px;
+	margin-bottom: 0px !important;
+	}
+.linenum li{list-style-type: none;padding:0px 0.5em 0px 0px;text-align: right;margin: 0px;width: 3em;}
+	.mark{color:#C029CF;font-weight: bolder;background-color: transparent !important;}
